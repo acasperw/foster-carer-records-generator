@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "../../Wordpress/advanced-custom-fields-pro"
+  ],
+  "mappings": {
+    "wp-content/themes/fcrg-wp-theme-api": "../fcrg-wp-theme-api"
+  }
+}
