@@ -1,0 +1,10 @@
+{
+  "name": "fcrg",
+  "version": "0.0.0",
+  "scripts": {
+    "start-ng": "cd fcrg-webapp && ng serve",
+    "start-api": "cd fcrg-wp-theme-api && wp-env start"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
