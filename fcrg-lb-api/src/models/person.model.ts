@@ -17,15 +17,20 @@ export class Person extends Entity {
 
   @property({
     type: 'string',
+  })
+  middleNames?: string;
+
+  @property({
+    type: 'string',
     required: true,
   })
   lastName: string;
 
   @property({
-    type: 'string',
+    type: 'date',
+    required: true,
   })
-  middleNames?: string;
-
+  dateOfBirth: string;
 
   constructor(data?: Partial<Person>) {
     super(data);
