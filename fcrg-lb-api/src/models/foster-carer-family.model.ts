@@ -1,5 +1,6 @@
 import {Entity, model, property, hasMany} from '@loopback/repository';
 import {FosterCarer} from './foster-carer.model';
+import {Child} from './child.model';
 
 @model()
 export class FosterCarerFamily extends Entity {
@@ -23,6 +24,9 @@ export class FosterCarerFamily extends Entity {
 
   @hasMany(() => FosterCarer)
   fosterCarers: FosterCarer[];
+
+  @hasMany(() => Child)
+  children: Child[];
 
   constructor(data?: Partial<FosterCarerFamily>) {
     super(data);

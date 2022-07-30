@@ -5,3 +5,5 @@ export * from './family.controller';
 export * from './appointment.controller';
 export * from './foster-carer-family-foster-carer.controller';
 export * from './foster-carer-foster-carer-family.controller';
+export * from './foster-carer-family-child.controller';
+export * from './child-foster-carer-family.controller';

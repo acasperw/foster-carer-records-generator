@@ -1,8 +1,12 @@
-import {model} from '@loopback/repository';
+import {model, belongsTo} from '@loopback/repository';
 import {Person} from '.';
+import {FosterCarerFamily} from './foster-carer-family.model';
 
 @model()
 export class Child extends Person {
+
+  @belongsTo(() => FosterCarerFamily)
+  fosterCarerFamilyId: string;
 
   constructor(data?: Partial<Child>) {
     super(data);
